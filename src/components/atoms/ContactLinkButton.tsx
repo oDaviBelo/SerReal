@@ -24,7 +24,7 @@ export const ContactLinkButton = ({
       href={link}
       rel="noopener noreferrer"
       target="_blank"
-      className={`${className} relative z-50 group rounded-3xl flex max-w-[200px] lg:min-w-[200px] p-3 pr-0 bg-background cursor-pointer hover:text-white items-center justify-center text-foreground ${classButton}`}
+      className={`${className} relative z-20 group rounded-3xl flex max-w-[200px] lg:min-w-[200px] p-3 pr-0 bg-background cursor-pointer hover:bg-black hover:text-white items-center justify-center text-foreground ${classButton}`}
     >
       <div
         className={`bg-foreground ${classButtonIcon} h-fit p-4 left-1 items-center group-hover:bg-[#080F25] absolute w-fit rounded-full`}
