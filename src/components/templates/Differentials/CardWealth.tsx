@@ -1,26 +1,11 @@
 import CountUp from 'react-countup'
 import Image from 'next/image'
 import Globe from '@/assets/globe.png'
-import { useEffect, useState, useRef } from 'react'
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
 export const CardWealth = () => {
-  const ref = useRef<HTMLDivElement>(null)
-  const [visible, setVisible] = useState(false)
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setVisible(entry.isIntersecting)
-      },
-      { threshold: 0.3 },
-    )
-
-    if (ref.current) {
-      observer.observe(ref.current)
-    }
-
-    return () => {
-      if (ref.current) observer.unobserve(ref.current)
-    }
-  }, [])
+  const { ref, visible } = useIntersectionObserver<HTMLDivElement>({
+    threshold: 0.3,
+  })
 
   return (
     <div
