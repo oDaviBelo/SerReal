@@ -4,6 +4,7 @@ import { Mission } from '@/components/templates/Mission/Mission'
 import { Solutions } from '@/components/templates/Solutions/Solutions'
 import { SlideMission } from '@/components/templates/SlideMission/SlideMission'
 import { Differentials } from '@/components/templates/Differentials/Differentials'
+import { Footer } from '@/components/templates/Footer/Footer'
 export default function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Home() {
       <Solutions />
       <SlideMission />
       <Differentials />
+      <Footer />
     </>
   )
 }
