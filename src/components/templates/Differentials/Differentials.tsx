@@ -30,7 +30,7 @@ export const Differentials = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="mb-20 lg:mb-35  flex flex-col items-center">
+          <div className="mb-20 lg:mb-45  flex flex-col items-center">
             <CardWealth />
           </div>
           <div className="">
