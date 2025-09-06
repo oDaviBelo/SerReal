@@ -15,10 +15,10 @@ export const CardWealth = () => {
       <div className="absolute bottom-0 left-0 z-0">
         <Image
           src={Globe}
-          width={0}
-          height={0}
+          width={250}
+          height={250}
           alt="globo"
-          className="h-fit w-fit bottom-0"
+          className="bottom-0"
         ></Image>
       </div>
       <h3 className="text-3xl relative z-10">Wealth</h3>
