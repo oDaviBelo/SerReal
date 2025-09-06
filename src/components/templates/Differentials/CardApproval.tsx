@@ -1,30 +1,15 @@
 import CountUp from 'react-countup'
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
 
-import { useEffect, useState, useRef } from 'react'
 export const CardApproval = () => {
-  const ref = useRef<HTMLDivElement>(null)
-  const [visible, setVisible] = useState(false)
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setVisible(entry.isIntersecting)
-      },
-      { threshold: 0.3 },
-    )
-
-    if (ref.current) {
-      observer.observe(ref.current)
-    }
-
-    return () => {
-      if (ref.current) observer.unobserve(ref.current)
-    }
-  }, [])
+  const { ref, visible } = useIntersectionObserver<HTMLDivElement>({
+    threshold: 0.3,
+  })
 
   return (
     <div
       ref={ref}
-      className="gap-20 bg-white rounded-2xl shadow shadow-black shadow-2xl w-2/3 p-10 text-black font-semibold relative"
+      className="gap-20 bg-white rounded-2xl shadow-black shadow-2xl w-2/3 p-10 text-black font-semibold relative"
     >
       <h3 className="text-[16px] md:text-2xl lg:text-3xl">Aprovação</h3>
       {visible && (
