@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import shadowBottom from '@/assets/shadow-bottom.svg'
-import shadowMobile from '@/assets/shadow-mobile.svg'
-import { ContactLinkButton } from '@/components/atoms/ContactLinkButton'
+import Image from "next/image";
+import shadowBottom from "@/assets/shadow-bottom.svg";
+import shadowMobile from "@/assets/shadow-mobile.svg";
+import { ContactLinkButton } from "@/components/atoms/ContactLinkButton";
 export const Hero = () => {
   return (
     <section className="bg-foreground h-screen rounded-b-3xl relative">
@@ -35,7 +35,7 @@ export const Hero = () => {
         <ContactLinkButton classButton="bottom-42 mx-auto" />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

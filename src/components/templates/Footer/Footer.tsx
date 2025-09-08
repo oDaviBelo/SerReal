@@ -1,22 +1,22 @@
-'use client'
-import Logo from '@/assets/Logo.svg'
-import Image from 'next/image'
-import ShadowFooter from '@/assets/shadow-top.svg'
-import ContactLinkButton from '@/components/atoms/ContactLinkButton'
-import Link from 'next/link'
-import React, { useState } from 'react'
-import navLinks from '@/data/nav-link-data'
+"use client";
+import Logo from "@/assets/Logo.svg";
+import Image from "next/image";
+import ShadowFooter from "@/assets/shadow-top.svg";
+import ContactLinkButton from "@/components/atoms/ContactLinkButton";
+import Link from "next/link";
+import React, { useState } from "react";
+import navLinks from "@/data/nav-link-data";
 
 export const Footer = () => {
-  const [emailToCopy] = useState('comercial@serrealvidaescolar.com.br')
-  const [wasCopied, setWasCopied] = useState(false)
+  const [emailToCopy] = useState("comercial@serrealvidaescolar.com.br");
+  const [wasCopied, setWasCopied] = useState(false);
   const copyOnClick = () => {
-    navigator.clipboard.writeText(emailToCopy)
-    setWasCopied(true)
+    navigator.clipboard.writeText(emailToCopy);
+    setWasCopied(true);
     setTimeout(() => {
-      setWasCopied(false)
-    }, 2000)
-  }
+      setWasCopied(false);
+    }, 2000);
+  };
   return (
     <footer
       id="contato"
@@ -87,5 +87,5 @@ export const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};

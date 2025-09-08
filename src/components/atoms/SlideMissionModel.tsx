@@ -1,16 +1,16 @@
-'use client'
-import * as React from 'react'
-import { useKeenSlider } from 'keen-slider/react'
-import 'keen-slider/keen-slider.min.css'
+"use client";
+import * as React from "react";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 
-const animation = { duration: 10000, easing: (t: number) => t }
+const animation = { duration: 10000, easing: (t: number) => t };
 export type SlideProps = {
-  isRtl: boolean
-  slide1: string
-  slide2: string
-  slide3: string
-  slide4: string
-}
+  isRtl: boolean;
+  slide1: string;
+  slide2: string;
+  slide3: string;
+  slide4: string;
+};
 
 export const SlideMissionModel = ({
   isRtl,
@@ -23,23 +23,23 @@ export const SlideMissionModel = ({
     loop: true,
     rtl: isRtl,
 
-    renderMode: 'performance',
+    renderMode: "performance",
     drag: false,
     created(s) {
-      s.moveToIdx(4, true, animation)
+      s.moveToIdx(4, true, animation);
     },
     updated(s) {
-      s.moveToIdx(s.track.details.abs + 4, true, animation)
+      s.moveToIdx(s.track.details.abs + 4, true, animation);
     },
     animationEnded(s) {
-      s.moveToIdx(s.track.details.abs + 4, true, animation)
+      s.moveToIdx(s.track.details.abs + 4, true, animation);
     },
     breakpoints: {
-      '(min-width:0px)': {
-        slides: { perView: 'auto', spacing: 50 },
+      "(min-width:0px)": {
+        slides: { perView: "auto", spacing: 50 },
       },
     },
-  })
+  });
   return (
     <section
       ref={sliderRef}
@@ -66,7 +66,7 @@ export const SlideMissionModel = ({
         </h3>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default SlideMissionModel
+export default SlideMissionModel;

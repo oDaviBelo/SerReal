@@ -8,7 +8,7 @@ export const Mission = () => {
         Nossa prioridade é o cuidado, segurança, qualidade, é você.
       </h2>
     </section>
-  )
-}
+  );
+};
 
-export default Mission
+export default Mission;

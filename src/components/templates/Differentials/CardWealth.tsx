@@ -1,11 +1,11 @@
-import CountUp from 'react-countup'
-import Image from 'next/image'
-import Globe from '@/assets/globe.png'
-import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
+import CountUp from "react-countup";
+import Image from "next/image";
+import Globe from "@/assets/globe.png";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 export const CardWealth = () => {
   const { ref, visible } = useIntersectionObserver<HTMLDivElement>({
     threshold: 0.3,
-  })
+  });
 
   return (
     <div
@@ -49,5 +49,5 @@ export const CardWealth = () => {
         Já movimentamos dezenas de milhões de reais em seguros de vida.
       </p>
     </div>
-  )
-}
+  );
+};

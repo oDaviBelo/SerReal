@@ -1,6 +1,6 @@
-'use client'
-import * as React from 'react'
-import SlideMissionModel from '@/components/atoms/SlideMissionModel'
+"use client";
+import * as React from "react";
+import SlideMissionModel from "@/components/atoms/SlideMissionModel";
 export const SlideMission = () => {
   return (
     <section className="mt-30">
@@ -19,7 +19,7 @@ export const SlideMission = () => {
         slide4="CONFIANÇA"
       />
     </section>
-  )
-}
+  );
+};
 
-export default SlideMission
+export default SlideMission;

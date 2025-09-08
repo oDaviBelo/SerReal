@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import Logo from '@/assets/Logo.svg'
-import Link from 'next/link'
+import Image from "next/image";
+import Logo from "@/assets/Logo.svg";
+import Link from "next/link";
 
-import MenuMobile from '@/components/atoms/MenuMobile'
-import navLinks from '@/data/nav-link-data'
+import MenuMobile from "@/components/atoms/MenuMobile";
+import navLinks from "@/data/nav-link-data";
 export const Header = () => {
   return (
     <header className="absolute bg-transparent top-0 left-0 z-[51] w-full">
@@ -29,5 +29,5 @@ export const Header = () => {
         <MenuMobile navLinks={navLinks} />
       </div>
     </header>
-  )
-}
+  );
+};

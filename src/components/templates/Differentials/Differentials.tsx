@@ -1,9 +1,9 @@
-'use client'
-import { CardMarketYears } from '@/components/templates/Differentials/CardMarketYears'
-import { CardWealth } from '@/components/templates/Differentials/CardWealth'
-import { CardSchool } from '@/components/templates/Differentials/CardSchool'
-import { CardApproval } from '@/components/templates/Differentials/CardApproval'
-import { ContactLinkButton } from '@/components/atoms/ContactLinkButton'
+"use client";
+import { CardMarketYears } from "@/components/templates/Differentials/CardMarketYears";
+import { CardWealth } from "@/components/templates/Differentials/CardWealth";
+import { CardSchool } from "@/components/templates/Differentials/CardSchool";
+import { CardApproval } from "@/components/templates/Differentials/CardApproval";
+import { ContactLinkButton } from "@/components/atoms/ContactLinkButton";
 export const Differentials = () => {
   return (
     <section id="diferenciais" className="">
@@ -44,5 +44,5 @@ export const Differentials = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import SolutionsGirl from '@/assets/solutions-girl.svg'
-import SolutionsData from '@/data/solutions-data'
+import Image from "next/image";
+import SolutionsGirl from "@/assets/solutions-girl.svg";
+import SolutionsData from "@/data/solutions-data";
 export const Solutions = () => {
   return (
     <section id="solucoes">
@@ -36,12 +36,12 @@ export const Solutions = () => {
                     <p className="pb-10">{item.body}</p>
                     {index !== 2 && <hr />}
                   </div>
-                )
+                );
               })}
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

@@ -1,23 +1,23 @@
-'use client'
-import Link from 'next/link'
-import Image from 'next/image'
-import arrow from '@/assets/arrom-button.svg'
+"use client";
+import Link from "next/link";
+import Image from "next/image";
+import arrow from "@/assets/arrom-button.svg";
 
 interface ContactButtonProps {
-  link?: string
-  text?: string
-  className?: string
-  classButton?: string
+  link?: string;
+  text?: string;
+  className?: string;
+  classButton?: string;
 
-  classButtonIcon?: string
+  classButtonIcon?: string;
 }
 
 export const ContactLinkButton = ({
-  link = 'https://wa.me/5571992541919?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Ser%20Real.%20Gostaria%20de%20algumas%20informa%C3%A7%C3%B5es.',
-  text = 'Fale conosco',
-  className = 'bg-background',
-  classButton = '',
-  classButtonIcon = '',
+  link = "https://wa.me/5571992541919?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Ser%20Real.%20Gostaria%20de%20algumas%20informa%C3%A7%C3%B5es.",
+  text = "Fale conosco",
+  className = "bg-background",
+  classButton = "",
+  classButtonIcon = "",
 }: ContactButtonProps) => {
   return (
     <Link
@@ -33,6 +33,6 @@ export const ContactLinkButton = ({
       </div>
       <span className="w-full text-center items-center">{text}</span>
     </Link>
-  )
-}
-export default ContactLinkButton
+  );
+};
+export default ContactLinkButton;

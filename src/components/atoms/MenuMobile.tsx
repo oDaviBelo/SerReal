@@ -1,23 +1,23 @@
-'use client'
-import Link from 'next/link'
-import { useState } from 'react'
-import { useBodyScrollLock } from '@/hooks/useBodyScrollLock'
-import menuIcon from '@/assets/menu-icon.svg'
-import Image from 'next/image'
+"use client";
+import Link from "next/link";
+import { useState } from "react";
+import { useBodyScrollLock } from "@/hooks/useBodyScrollLock";
+import menuIcon from "@/assets/menu-icon.svg";
+import Image from "next/image";
 interface navDataType {
-  href: string
-  label: string
+  href: string;
+  label: string;
 }
 
 interface menuMobileProps {
-  navLinks: navDataType[]
+  navLinks: navDataType[];
 }
 export const MenuMobile = ({ navLinks }: menuMobileProps) => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
-    setIsOpen((prev) => !prev)
-  }
-  useBodyScrollLock(isOpen)
+    setIsOpen((prev) => !prev);
+  };
+  useBodyScrollLock(isOpen);
 
   return (
     <>
@@ -34,7 +34,7 @@ export const MenuMobile = ({ navLinks }: menuMobileProps) => {
       </div>
       <div
         id="mobile-menu"
-        className={`fixed top-0 right-0 h-screen w-[90%] max-w-sm bg-[#0A2846] shadow-lg transition-transform duration-300 ease-in-out z-50 lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`fixed top-0 right-0 h-screen w-[90%] max-w-sm bg-[#0A2846] shadow-lg transition-transform duration-300 ease-in-out z-50 lg:hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}
         role="dialog"
         aria-modal="true"
         aria-labelledby="mobile-menu-title"
@@ -75,7 +75,7 @@ export const MenuMobile = ({ navLinks }: menuMobileProps) => {
         </nav>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default MenuMobile
+export default MenuMobile;
