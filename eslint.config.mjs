@@ -20,8 +20,14 @@ const eslintConfig = [
     rules: {
       'prettier/prettier': ['error'],
       '@typescript-eslint/no-empty-object-type': 'off',
+      '@typescript-eslint/triple-slash-reference': 'off', // desativa a regra só neste projeto
     },
-    ignorePatterns: ['node_modules/', 'dist/', 'build/'],
+    ignorePatterns: [
+      'node_modules/',
+      'dist/',
+      'build/',
+      'next-env.d.ts', // adiciona o next-env.d.ts para ser ignorado
+    ],
   }),
 ]
 
