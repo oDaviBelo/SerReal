@@ -1,12 +1,12 @@
-import Image from 'next/image'
-import Graph from '@/assets/graph.png'
-import CountUp from 'react-countup'
-import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
+import Image from "next/image";
+import Graph from "@/assets/graph.png";
+import CountUp from "react-countup";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 export const CardMarketYears = () => {
   const { ref, visible } = useIntersectionObserver<HTMLDivElement>({
     threshold: 0.3,
-  })
+  });
   return (
     <div
       ref={ref}
@@ -43,10 +43,10 @@ export const CardMarketYears = () => {
       )}
 
       <hr className="mx-auto my-10" />
-      <p className="font-normal xl:w-80  break-normal mx-auto">
+      <p className="font-normal break-normal mx-auto">
         Nosso time é extremamente qualificado e experiente. Estamos prontos para
         atender você.
       </p>
     </div>
-  )
-}
+  );
+};
