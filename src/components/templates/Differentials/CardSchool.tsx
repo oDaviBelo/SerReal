@@ -1,5 +1,5 @@
-import Image from "next/image";
-import School from "@/assets/school.jpg";
+import Image from 'next/image'
+import School from '@/assets/school.jpg'
 export const CardSchool = () => {
   return (
     <div className="rounded-2xl w-fit">
@@ -11,5 +11,5 @@ export const CardSchool = () => {
         className="rounded-2xl w-fit"
       ></Image>
     </div>
-  );
-};
+  )
+}

@@ -1,10 +1,10 @@
-import CountUp from "react-countup";
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import CountUp from 'react-countup'
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
 
 export const CardApproval = () => {
   const { ref, visible } = useIntersectionObserver<HTMLDivElement>({
     threshold: 0.3,
-  });
+  })
 
   return (
     <div
@@ -39,5 +39,5 @@ export const CardApproval = () => {
         Nosso time tem uma taxa 100% de aprovação dos clientes.
       </p>
     </div>
-  );
-};
+  )
+}

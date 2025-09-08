@@ -1,12 +1,12 @@
-import Image from "next/image";
-import Graph from "@/assets/graph.png";
-import CountUp from "react-countup";
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import Image from 'next/image'
+import Graph from '@/assets/graph.png'
+import CountUp from 'react-countup'
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
 
 export const CardMarketYears = () => {
   const { ref, visible } = useIntersectionObserver<HTMLDivElement>({
     threshold: 0.3,
-  });
+  })
   return (
     <div
       ref={ref}
@@ -48,5 +48,5 @@ export const CardMarketYears = () => {
         atender você.
       </p>
     </div>
-  );
-};
+  )
+}
