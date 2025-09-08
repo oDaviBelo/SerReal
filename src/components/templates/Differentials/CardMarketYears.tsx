@@ -43,7 +43,7 @@ export const CardMarketYears = () => {
       )}
 
       <hr className="mx-auto my-10" />
-      <p className="font-normal xl:w-80  break-normal mx-auto">
+      <p className="font-normal break-normal mx-auto">
         Nosso time é extremamente qualificado e experiente. Estamos prontos para
         atender você.
       </p>
